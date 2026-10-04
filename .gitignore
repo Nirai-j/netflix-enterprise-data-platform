@@ -1,17 +1,38 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Virtual Env
+# Virtual Environment
 .venv/
 venv/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
 
 # Generated Data
 simulator/output/**/*.parquet
 
-# VS Code
-.vscode/
+# Logs
+*.log
 
-# OS
-.DS_Store
-Thumbs.db
+# Test Artifacts
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
