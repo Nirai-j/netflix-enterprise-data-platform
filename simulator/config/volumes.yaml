@@ -1,0 +1,28 @@
+accounts: 1000
+
+profiles_per_account:
+  min: 1
+  max: 5
+
+titles: 300
+
+seasons_per_series:
+  min: 1
+  max: 8
+
+episodes_per_season:
+  min: 6
+  max: 24
+
+subscriptions:
+  penetration_rate: 0.90
+
+invoices_per_subscription: 12
+
+payment_success_rate: 0.95
+
+playback_events: 50000
+
+search_events: 10000
+
+recommendation_events: 10000

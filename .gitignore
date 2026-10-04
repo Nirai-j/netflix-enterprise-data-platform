@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Env
+.venv/
+venv/
+
+# Generated Data
+simulator/output/**/*.parquet
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
