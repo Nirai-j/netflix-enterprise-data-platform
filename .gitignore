@@ -36,3 +36,11 @@ simulator/output/**/*.parquet
 
 # Jupyter
 .ipynb_checkpoints/
+
+
+.env
+simulator/output/
+.venv/
+testfile.py
+.terraform/
+terraform.tfstate*
