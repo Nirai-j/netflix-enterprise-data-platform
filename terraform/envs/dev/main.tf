@@ -33,3 +33,26 @@ module "aurora" {
 
   security_group_id = module.network.aurora_security_group_id
 }
+
+
+module "dms" {
+
+  source = "../../modules/dms"
+
+  environment = var.environment
+
+  dms_security_group_id = module.network.dms_security_group_id
+
+  private_subnet_ids = module.network.private_subnet_ids
+
+  aurora_endpoint = module.aurora.cluster_endpoint
+
+  database_name = "netflix"
+
+  db_username = var.db_username
+  db_password = var.db_password
+
+  bucket_name = module.s3.bucket_name
+
+  dms_s3_role_arn = module.iam.dms_role_arn
+}
